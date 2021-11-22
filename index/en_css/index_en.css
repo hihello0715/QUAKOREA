@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+
+/* Introduction */
+.content1 .wrapper span:first-child{width: auto;}
+.sec1 .wrapper span:last-child{font-weight: 600;}
+.content2 .map .circle .text-right{
+    bottom: -35px;
+    right: -120px;
+}
+.content2 .map .circle .text.-left{bottom: -35px;}
+
+/* patent */
+.content1 .box.patent{height: 370px;}
+
+/* ci */
+.con_box .box.two .logo_box{justify-content: center;}
+
+/* map */
+.content1 div span:first-child{width: 75px;}
+
+/* review */
+.review .box{height: 585px;}
+
+/* product */
+#content1 .icon_box p{width: 165px;}

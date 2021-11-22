@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'NanumSquareRound';
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+
+/* *{ border: 0.1px solid #7a7a7a;} */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+.sec1 {
+    height: 100%;
+}
+
+.sec1 .sub_title {
+    text-align: center;
+    width: 100%;
+    padding: 110px 0 60px;
+    background: #0A0F23;
+    color: #fff;
+}
+
+.content1 {
+    margin: 100px 0;
+    height: auto;
+}
+
+/*tap*/
+.main {
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+section {
+    display: none;
+    padding: 50px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+label:hover {
+    color: #2e9cdf;
+    cursor: pointer;
+}
+
+input:checked+label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid #2e9cdf;
+    border-bottom: 1px solid #ffffff;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*content1*/
+section h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#content1 .icon_box {
+    display: flex;
+    align-items: center;
+    color: #009ed2;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+#content1 .icon_box img {
+    width: 40px;
+}
+
+#content1 .icon_box p {
+    margin: 0 50px 0 10px;
+}
+
+#content1 .icon_box p:last-child {
+    margin-right: 0;
+}
+
+#content1 .quacok-img {
+    height: 500px;
+}
+
+#content1 .bottom {
+    margin: 50px 0;
+}
+
+#content1 .bottom p:nth-child(3),
+#content2 .bottom p:nth-child(2) {
+    margin-top: 10px
+}
+
+#content1 .color {
+    display: flex;
+}
+
+#content1 .color img {
+    width: 95%;
+}
+
+#content1 .color .text {
+    display: flex;
+    justify-content: center;
+}
+
+#content1 .color .text p:first-child {
+    margin-right: 10px;
+}
+
+/* content2 */
+#content2 img {
+    margin: 50px 0;
+    width: 350px;
+}
+
+/* content3 */
+#content3 img,
+#content4 img,
+#content5 .img_box {
+    margin-top: 50px;
+}
+
+#content3 img:first-child {
+    margin-right: 50px;
+}
+
+/* content4 */
+#content4 .img_box img:nth-child(1) {
+    width: 400px;
+}
+
+#content4 .img_box img:nth-child(2),
+#content4 .img_box img:nth-child(3) {
+    width: 25%;
+}
+
+/* content5 */
+#content5 .img_box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#content5 .img_box .le {
+    width: 49%;
+}
+
+#content5 .img_box .ri {
+    width: 40%;
+    margin-left: 1%;
+}
+
+#content5 .img_box img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+footer .set {
+    display: flex;
+    justify-content: center;
+}
+
+footer .top {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #fff;
+    margin-right: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+footer span {
+    margin-right: 15px;
+}
+
+footer .click {
+    cursor: pointer;
+}

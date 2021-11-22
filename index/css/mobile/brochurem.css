@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+
+.content1{
+    display: block;
+    margin: 50px 0;
+}
+
+.content1 a .img{
+    width: 100%;
+    height: 180px;
+}
+.content1 .text{
+    width: 100%;
+    margin: 20px 0 0;
+}
+.content1 .text h1{font-size: 30px;}
+.content1 .text .button{justify-content: flex-start;}
+.content1 .text .button a:last-child{margin-left: 5px;}

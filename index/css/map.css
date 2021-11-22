@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'NanumSquareRound';
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+/* *{ border: 0.1px solid #7a7a7a;} */
+ul{list-style: none;}
+a {text-decoration: none;}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+.sec1 .sub_title{
+    text-align: center;
+    width: 100%;
+    padding: 110px 0 60px;
+    background: #0A0F23;
+    color: #fff;
+}
+.content1{
+    margin: 100px 0;
+    height: auto;
+}
+iframe{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.content1 > div{display: flex;}
+.content1 > div > span:first-child{
+    width: 50px;
+    display: block;
+    font-weight: 600;
+}
+
+/* footer */
+footer{
+    background: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.3s;
+    text-align: center;
+}
+footer .set{
+    display: flex;
+    justify-content: center;
+}
+footer .top{margin-bottom: 5px;}
+footer a{
+    color: #fff;
+    margin-right: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+footer span{margin-right: 15px;}
+.click{cursor: pointer;}

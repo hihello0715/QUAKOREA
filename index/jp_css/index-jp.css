@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* about */
+.content2 .map .circle .text-right{
+    right: -120px;
+}
+.content1 .wrapper span:first-child{width: auto;}
+
+/* product stoy */
+.review .box h3{font-size: 1.06rem;}
+.review .box p{font-size: 0.86rem;}
+
+/* ci */
+.con_box .box.two .logo_box{justify-content: center;}
+
+/* patent */
+.content2 .set {width: 15%;}
+
+/* map */
+.content1 div span:first-child{width: 75px;}

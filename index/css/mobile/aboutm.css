@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+
+.sec1 .wave-box{
+    height: 300px;
+    margin: 30px auto 50px;
+}
+.wave-box .swiper{
+    overflow: hidden;
+}
+.swiper-slide{position: relative;}
+.wrapper, .wrapper.-treen{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: -5px;}
+
+.content1 .text_one span, .content2 span{display: block;} 
+.content2 .map{
+    height: 300px;
+    margin: 80px 0 50px;
+}
+.content2 .map .circle{width: 180px;}
+.content2 .map .circle .text{top: 45%;}
+.content2 .map .circle .text.-center{font-size: 18px;}
+.content2 .map .circle .text.-left{
+    top: 130px;
+    left: -50px;
+}
+.content2 .map .circle .text.-top{top: -90px;}
+
+

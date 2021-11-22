@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+nav .right .link a{font-weight: 500;}
+nav ul.gnb li.title{font-weight: 400;}
+.snb ul li a{font-weight: 300;}
+.snb .additional a{font-size: 12px;}
+nav .business{font-weight: 500;}

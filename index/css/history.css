@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumSquareRound';
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+ul {list-style: none;}
+
+a {text-decoration: none;}
+
+html{height: 100%;}
+body {
+    overflow: hidden;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  flex-direction: column;
+}
+
+
+/* body */
+
+div.sec1 {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+div.sub_title {
+    height: auto;
+    text-align: center;
+    background: #0A0F23;
+    color: #fff;
+    position: relative;
+    padding: 110px 0 60px;
+}
+
+div.sub_title:after {
+    content: '';
+    position: absolute;
+    bottom: -5rem;
+    left: 0rem;
+    height: 5.1rem;
+    display: block;
+    width: 100%;
+    z-index: 300;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+    /* IE6-9 */
+}
+
+.sec1 div.item {
+    height: 100%;
+    display: flex;
+    flex: auto;
+    overflow-y: auto;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.sec1 #timeline {
+    position: relative;
+    height: 100%;
+    display: table;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.sec1 #timeline div:after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: .5rem;
+    bottom: 0px;
+    left: 95px;
+    background: #00468d;
+}
+
+.sec1 #timeline div h3 {
+    position: sticky;
+    top: 5rem;
+    margin: 0;
+    color: #00468d;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sec1 #timeline section {
+    position: relative;
+    margin-bottom: 2.2em;
+}
+.sec1 #timeline section:last-child{
+    padding-bottom: 3em;
+}
+.sec1 #timeline section > div {
+    list-style-type: none;
+    padding: 0 0 0 125px;
+    margin: -2.35rem 0 1em;
+    display: flex;
+}
+
+.sec1 #timeline section div:last-child {
+    margin-bottom: 80px;
+}
+
+.sec1 #timeline section ul:last-child:first-of-type:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #00468d;
+    border-radius: 50%;
+    position: absolute;
+    left: 89px;
+    top: 8px;
+    z-index: 2;
+}
+.sec1 li{margin-left: 30px;}
+.sec1 li:before {
+    content: '·';
+    margin-left: -.5rem;
+    padding-right: .3rem;
+}
+.sec1 .year section p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.sec1 .year section > ul > li:first-child::before{display: none;}
+
+.sec1 li:not(:first-child) {
+    margin-top: .5rem;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.3s;
+    text-align: center;
+    z-index: 50000;
+}
+
+footer .set {
+    display: flex;
+    justify-content: center;
+}
+
+footer .top {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #fff;
+    margin-right: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+footer span {
+    margin-right: 15px;
+}
+
+footer .click {
+    cursor: pointer;
+}

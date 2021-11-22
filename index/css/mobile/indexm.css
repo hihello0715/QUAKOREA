@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400&display=swap');
+
+
+#video{display: none;}
+.background img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    top: 50%;
+    transform: translateY(-70%);
+}
+
+.sec1 .text{width: auto;}
+.sec1 .text h1{font-size: 2rem;}
+.sec1 .text p{font-size: 1.5rem;}

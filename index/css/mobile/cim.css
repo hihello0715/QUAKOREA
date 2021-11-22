@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400&display=swap');
+
+.content1 .con_box{
+    display: block;
+    height: 100%;
+    background-size: auto 100%;
+}
+.con_box .box.one .symbol{
+    height: 110px;
+    margin: 10px auto;
+}
+.con_box .box{width: 100%;}
+
+.con_box .box.two .Logotype{
+    height: 25px;
+    margin: 10px auto;
+}
+
+.content2 .con_box{display: block;}
+.content2 .color-box{width: 100%;}
+.content2 .color-box:last-child{margin-top: 30px;}
+.content2 .text > p:nth-child(2){font-size: 0.85rem;}

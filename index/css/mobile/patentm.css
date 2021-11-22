@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+
+.content3 h3{font-size: 50px;}
+.sec1 .content1 .box_set{display: block;}
+.content1 .box{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 15px #aaa;
+}
+.sec1 .content1 .box_set span{display: inline;}
+
+.content2{padding: 50px 0;}
+.content2 .set p{font-size: 0.9rem;}
+.content2 .set_box{padding-bottom: 30px;}
+
+.swiper.mySwiper{display: block;}
+.Patent_set{display: none;}
+
+.content4 img:first-child{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.swiper.mySwiper{height: 350px;}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 0;}

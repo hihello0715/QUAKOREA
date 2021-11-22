@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+.review .box{margin: 0;}
+
+.swiper-button-next, .swiper-button-prev{display: block;}
+
+.content1 h1 span{display: block;}

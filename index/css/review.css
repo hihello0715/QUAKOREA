@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'NanumSquareRound';
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+
+/* *{ border: 0.1px solid #7a7a7a;} */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+.sec1 {
+    height: 100%;
+}
+
+.sec1 .sub_title {
+    text-align: center;
+    width: 100%;
+    padding: 110px 0 60px;
+    background: #0A0F23;
+    color: #fff;
+}
+
+.content1{
+    margin: 100px 0;
+    height: auto;
+    text-align: center;
+}
+
+/* tab */
+.tab_box{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    align-items: center;
+    height: 180px;
+}
+.tab{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    width: 200px;
+    border-right: 1px solid #656565;
+}
+.tab.five{border: none;}
+.tab img{margin-bottom: 10px;}
+
+/* review */
+.review{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.review.quacok{margin-top: 80px;}
+.review.led{margin: 0;}
+.review .box{
+    margin-left: 20px;
+    position: relative;
+    border: 1px solid #999;
+    width: 32%;
+    height: 500px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review .box:first-child{margin: 0;}
+
+.review .box .taeg{
+    border: 1px solid #00bdbf;
+    color: #00bdbf;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px 0;
+}
+.review .box .text{width: 98%;}
+.review .box h3{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.review .box p{font-size: 0.92rem;}
+.review .box .img{
+    bottom: 20px;
+    position: absolute;
+    background: url(../img/quacok\ review\ -\ 1.png) center no-repeat;
+    width: 275px;
+    height: 230px;
+    background-size: 100%;
+}
+.review .box.two .img{
+    background: url(../img/quacok\ review\ -\ 2.png) center no-repeat;
+    background-size: 100%;
+}
+.review .box.three .img{
+    background: url(../img/quacok\ review\ -\ 3.png) center no-repeat;
+    background-size: 100%;
+}
+.review.filter .box.one .img{
+    background: url(../img/qua\ filter\ review\ -\ 1.png) center no-repeat;
+    background-size: 100%;
+}
+.review.filter .box.two .img{
+    background: url(../img/qua\ filter\ review\ -\ 2.png) center no-repeat;
+    background-size: 100%;
+}
+.review.filter .box.three .img{
+    background: url(../img/qua\ filter\ review\ -\ 3.png) center no-repeat;
+    background-size: 100%;
+}
+.review.quabox .box.one .img{
+    background: url(../img/qua\ box\ review\ -\ 1.png) center no-repeat;
+    background-size: 100%;
+}
+.review.quabox .box.two .img{
+    background: url(../img/qua\ box\ review\ -\ 2.png) center no-repeat;
+    background-size: 100%;
+}
+.review.quabox .box.three .img{
+    background: url(../img/qua\ box\ review\ -\ 3.png) center no-repeat;
+    background-size: 100%;
+}
+.review.led .box.one .img{
+    background: url(../img/qua\ led\ review\ -\ 1.png) center no-repeat;
+    background-size: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev{display: none;}
+
+
+
+/* footer */
+footer {
+    background: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+footer .set {
+    display: flex;
+    justify-content: center;
+}
+
+footer .top {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #fff;
+    margin-right: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+footer span {
+    margin-right: 15px;
+}
+
+footer .click {
+    cursor: pointer;
+}

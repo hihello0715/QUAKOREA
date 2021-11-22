@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+
+.sec1 #timeline div h3{font-size: 1.5rem;}
+.sec1 li{
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+.sec1 #timeline div:after{left: 81px;}
+.sec1 #timeline section ul:last-child:first-of-type:after{left: 75px;}
+.sec1 #timeline section > div{padding-left: 110px;}
