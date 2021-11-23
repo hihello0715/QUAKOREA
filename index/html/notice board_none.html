@@ -1,4 +1,4 @@
-<?php include  $_SERVER['DOCUMENT_ROOT']."../DB/DB.php"; ?>
+<?php echo include  $_SERVER['DOCUMENT_ROOT']."../DB/DB.php"; ?>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -167,7 +167,7 @@
                    <th>조회수</th>
                  </tr>
                </thead>
-               <?php 
+               <?php echo
               
                  $sql = query("select * from board order by idx desc limit 0,10"); 
                    while($board = $sql->fetch_array())
