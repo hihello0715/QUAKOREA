@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/none.css">
+    <link rel="stylesheet" type="text/css" href="../css/board.css">
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/nonem.css">
@@ -157,14 +157,50 @@
         </div>
         <div class="inner">
             <div class="sec">
-                <div class="text">
-                    <i class="fas fa-times"></i>
-                    <h3>서비스 이용에 불편을 드려 대단히 죄송합니다.</h3>
-                    <p>현재 페이지 준비 중입니다</p>
-                    <p>금방 좋은 모습으로 찾아뵙겠습니다.</p>
-                </div>
+              <table class="list-table">
+                <caption>목록</caption>
+                <thead>
+                  <tr>
+                    <th class="board_title">제목</th>
+                    <th class="board_date">작성일</th>
+                    <th class="board_hit">조회수</th>
+                  </tr>
+                </thead>
         
-                <a href="http://www.quakorea.com/">홈으로 이동<i class="fas fa-long-arrow-alt-right"></i></a>
+                <tbody>
+                  <tr>
+                    <td >안녕하세요</td>
+                    <td>2021-11-23</td>
+                    <td>123</td>
+                  </tr>  
+                  <tr>
+                    <td >안녕하세요</td>
+                    <td>2021-11-23</td>
+                    <td>123</td>
+                  </tr>  
+                  <tr>
+                    <td >안녕하세요</td>
+                    <td>2021-11-23</td>
+                    <td>123</td>
+                  </tr>  
+                  <tr>
+                    <td >안녕하세요</td>
+                    <td>2021-11-23</td>
+                    <td>123</td>
+                  </tr>  
+ 
+                </tbody>
+              </table>
+               
+              <div Class="search_box" id="search_box">
+     <form action="/page/board/search_result.php" method="get">
+       <select name="catgo">
+         <option value="title">제목</option>
+         <option value="content">내용</option>
+       </select>
+       <input type="text" name="search" size="40" required="required" /> <button>검색</button>
+     </form>
+     </div>
             </div>
         </div>
     </sectionc>
