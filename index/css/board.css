@@ -57,7 +57,7 @@ body {
     font-size: 25px;
 }
 .sec h3{margin: 30px 0 10px;}
-.sec a{
+/* .sec a{
     text-decoration: none;
     padding: 0 20px;
     display: flex;
@@ -75,7 +75,7 @@ body {
 .sec a:hover{
     transition: all 0.5s;
     background: red;
-}
+} */
 /* footer */
 footer{
     bottom: 0;
@@ -128,6 +128,72 @@ ul li {
 }
 
 /* 게시판 목록 */
+
+/* 글작성 버튼*/
+.board_write{
+  float:right;
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+.board_write:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+  }
+  
+  .board_write:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+  }
+  
+  .board_write:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+  }
+  
+  .board_write:focus {
+    outline: 1px transparent;
+  }
+  
+  .board_write:before {
+    display: none;
+  }
+  
+  .board_write:-webkit-details-marker {
+    display: none;
+  }
+
+
+
+/* 목록 */
+.caption_text{
+    display: inline;
+    font-size: 28px;
+    float: center;
+}
 #board_area {
 	width: 56.25rem;
 	position: relative;
@@ -136,7 +202,6 @@ ul li {
 	margin-top: 40px;
 }
 .list-table caption{
-    font-size: 28px;
     padding-bottom: 8px;
 }
 .list-table thead th{

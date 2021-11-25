@@ -1,3 +1,26 @@
+<?php
+            $currentPage = 1;
+            if (isset($_GET["currentPage"])) {
+                $currentPage = $_GET["currentPage"];
+            }
+ 
+            //mysqli_connect()함수로 커넥션 객체 생성
+            $conn = mysqli_connect("localhost:3307", "root", "ms010530","board");
+
+            //페이징 작업을 위한 테이블 내 전체 행 갯수 조회 쿼리
+            $sqlCount = "SELECT count(*) FROM board";
+            $resultCount = mysqli_query($conn,$sqlCount);
+            if($rowCount = mysqli_fetch_array($resultCount)){
+                $totalRowNum = $rowCount["count(*)"];   //php는 지역 변수를 밖에서 사용 가능.
+            }
+                        
+            $rowPerPage = 20;   //페이지당 보여줄 게시물 행의 수
+            $begin = ($currentPage -1) * $rowPerPage;
+            //board 테이블을 조회해서 board_no, board_title, board_user, board_date 필드 값을 내림차순으로 정렬하여 모두 가져 오는 쿼리
+            //입력된 begin값과 rowPerPage 값에 따라 가져오는 행의 시작과 갯수가 달라지는 쿼리
+            $sql = "SELECT idx, name, title, pw, content, date, hit FROM board order by idx desc limit ".$begin.",".$rowPerPage."";
+            $result = mysqli_query($conn,$sql);
+        ?>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -21,7 +44,7 @@
       <li class="title"><a href="../html/aboutus.html">회사소개</a></li>
       <li class="title"><a href="../html/review.html">제품 story</a></li>
       <li class="title"><a href="../html/product_QUACOK.html">제품</a></li>
-      <li class="title"><a href="../html/notice board_none.html">고객지원</a></li>
+      <li class="title"><a href="../html/notice board.php">고객지원</a></li>
       <li class="title"><a href="../html/News_none.html">홍보센터</a></li>
       <li class="snb">
         <div class="box">
@@ -46,7 +69,7 @@
             </ul>
           </ul>
           <ul>
-            <li><a href="../html/notice board_none.html">게시판</a></li>
+            <li><a href="../html/notice board.php">게시판</a></li>
             <li><a href="../html/Q&A_none.html">Q&A</a></li>
             <li><a href="../html/question_none.html">문의</a></li>
             <li><a href="../html/map.html">오시는 길</a></li>
@@ -114,7 +137,7 @@
           <a class="menu-link" href="#">고객지원</a>
         </li>
         <ul class="menu-submenu accordion-content">
-          <li><a class="head" href="../html/notice board_none.html">게시판</a></li>
+          <li><a class="head" href="../html/notice board.php">게시판</a></li>
           <li><a class="head" href="../html/Q&A_none.html">Q&A</a></li>
           <li><a class="head" href="../html/question_none.html">문의</a></li>
           <li><a class="head" href="../html/map.html">오시는 길</a></li>
@@ -157,8 +180,12 @@
         </div>
         <div class="inner">
             <div class="sec">
+              
              <table class="list-table">
-               <caption>목록</caption>
+             <caption>
+                    <div class="caption_text">목록</div>
+                    <a href="board/board_write.php"><button class="board_write">글작성</button></a>
+                  </caption> 
                <thead>
                  <tr>
                    <th class="board_title">제목</th>
@@ -167,34 +194,43 @@
                    <th class="board_hit">조회수</th>
                  </tr>
                </thead>
-       
+           
                <tbody>
-                 <tr>
-                   <td >안녕하세요</td>
-                   <td>2021-11-23</td>
-                   <td>홍길동</td>
-                   <td>123</td>
-                 </tr>  
-                 <tr>
-                   <td >안녕하세요</td>
-                   <td>2021-11-23</td>
-                   <td>홍길동</td>
-                   <td>123</td>
-                 </tr>  
-                 <tr>
-                   <td >안녕하세요</td>
-                   <td>2021-11-23</td>
-                   <td>홍길동</td>
-                   <td>123</td>
-                 </tr>  
-                 <tr>
-                   <td >안녕하세요</td>
-                   <td>2021-11-23</td>
-                   <td>홍길동</td>
-                   <td>123</td>
-                 </tr>  
+               <?php
+                //반복문을 이용하여 result 변수에 담긴 값을 row변수에 계속 담아서 row변수의 값을 테이블에 출력한다.
+                while($row = mysqli_fetch_array($result)){ 
+            ?>
+                <tr>
+                    
+                    <td>
+                        <?php
+                            echo "<a href='/board_detail.php?idx=".$row["idx"]."'>";
+                            echo $row["title"];
+                            echo "</a>";
+                        ?>
+                    </td>
+                    <td>
+                        <?php
+                            echo $row["date"];
+                        ?>
+                    </td>
+                    <td>
+                        <?php
+                            echo $row["name"];
+                        ?>
+                    </td>
+                    <td>
+                    <?php
+                            echo $row["hit"];
+                        ?>
+                        </td>
+                </tr>
+            <?php
+                }
+            ?>
 
                </tbody>
+
              </table>
               
              <div Class="search_box" id="search_box">
@@ -204,7 +240,7 @@
         <option value="name">작성자</option>
         <option value="content">내용</option>
       </select>
-      <input type="text" name="search" size="40" required="required" /> <buttons>검색</button>
+      <input type="text" name="search" size="40" required="required" /> <button>검색</button>
     </form>
     </div>
                              
