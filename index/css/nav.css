@@ -4,8 +4,11 @@
 
 .inner {
     width: 1000px;
+    height:auto;
     margin: 0 auto;
 }
+
+
 
 /* nav */
 nav .gnb2{display: none;}
