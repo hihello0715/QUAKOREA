@@ -85,12 +85,16 @@ width: 300px;
 height:200px;
 }
 
-.box{
+div.pic.two{
+    background: url(../img/뽀뽀.png) center;
+}
+
+.SemiInner{
     display: flex;
     margin: 70px 0;
     border:1px solid gray;
 }
-.box .text{margin-left: 20px;}
+.SemiInner .text{margin-left: 20px;}
 
 
 
