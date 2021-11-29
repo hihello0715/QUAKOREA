@@ -1,3 +1,14 @@
+<?php
+                $connect = mysqli_connect('localhost:3307', 'root', 'ms010530', 'board');
+                $idx = $_GET['idx'];
+                session_start();
+                $query = "select title, content, date, hit, name from board where idx =$idx";
+                $result = $connect->query($query);
+                $rows = mysqli_fetch_assoc($result);
+                $hit = "update board set hit=hit+1 where idx=$idx";
+                $connect->query($hit);
+
+	?>
 <!doctype html>
 <head>
 <meta charset="UTF-8">
@@ -155,15 +166,45 @@
 <body>
     <sectionc class="sec1">
         <div class="sub_title">
-            <h1>게시판</h1>
+            <h1 >게시판</h1>
             <p>Notice board</p>
         </div>
         <div class="inner">
             <div class="sec">
       
+      
+            <table class="view_table">
+        <tr>
+                <td colspan="4" class="view_title"><?php echo $rows['title']?></td>
+        </tr>
+        <tr>
+                <td class="view_id">작성자</td>
+                <td class="view_id2"><?php echo $rows['id']?></td>
+                <td class="view_hit">조회수</td>
+                <td class="view_hit2"><?php echo $rows['hit']?></td>
+        </tr>
+ 
+ 
+        <tr>
+                <td colspan="4" class="view_content" valign="top">
+                <?php echo $rows['content']?></td>
+        </tr>
+        </table>
+ 
+ 
+        <!-- MODIFY & DELETE -->
+        <div class="view_btn">
+                <button class="view_btn1" onclick="location.href='./index.php'">목록으로</button>
+                <button class="view_btn1" onclick="location.href='./modify.php?number=<?=$number?>&id=<?=$_SESSION['userid']?>'">수정</button>
+ 
+                <button class="view_btn1" onclick="location.href='./delete.php?number=<?=$number?>&id=<?=$_SESSION['userid']?>'">삭제</button>
+        </div>
 
-               
-    </div>
+
+
+
+
+
                              
             </div>
         </div>
@@ -197,37 +238,3 @@
     </div>
 </footer>
 </html>
-
-
-
-<!-- <title>게시판</title>
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-</head>
-<body>
-    <div id="board_write">
-        <h1><a href="/">자유게시판</a></h1>
-        <h4>글을 작성하는 공간입니다.</h4>
-            <div id="write_area">
-                <form action="write_ok.php" method="post">
-                    <div id="in_title">
-                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목" maxlength="100" required></textarea>
-                    </div>
-                    <div class="wi_line"></div>
-                    <div id="in_name">
-                        <textarea name="name" id="uname" rows="1" cols="55" placeholder="글쓴이" maxlength="100" required></textarea>
-                    </div>
-                    <div class="wi_line"></div>
-                    <div id="in_content">
-                        <textarea name="content" id="ucontent" placeholder="내용" required></textarea>
-                    </div>
-                    <div id="in_pw">
-                        <input type="password" name="pw" id="upw"  placeholder="비밀번호" required />  
-                    </div>
-                    <div class="bt_se">
-                        <button type="submit">글 작성</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </body>
-</html> -->

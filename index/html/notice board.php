@@ -6,7 +6,6 @@
  
             //mysqli_connect()함수로 커넥션 객체 생성
             $conn = mysqli_connect("localhost:3307", "root", "ms010530","board");
-
             //페이징 작업을 위한 테이블 내 전체 행 갯수 조회 쿼리
             $sqlCount = "SELECT count(*) FROM board";
             $resultCount = mysqli_query($conn,$sqlCount);
@@ -14,7 +13,7 @@
                 $totalRowNum = $rowCount["count(*)"];   //php는 지역 변수를 밖에서 사용 가능.
             }
                         
-            $rowPerPage = 20;   //페이지당 보여줄 게시물 행의 수
+            $rowPerPage = 10;   //페이지당 보여줄 게시물 행의 수
             $begin = ($currentPage -1) * $rowPerPage;
             //board 테이블을 조회해서 board_no, board_title, board_user, board_date 필드 값을 내림차순으로 정렬하여 모두 가져 오는 쿼리
             //입력된 begin값과 rowPerPage 값에 따라 가져오는 행의 시작과 갯수가 달라지는 쿼리
@@ -184,7 +183,7 @@
              <table class="list-table">
              <caption>
                     <div class="caption_text">목록</div>
-                    <a href="board/board_write.php"><button class="board_write">글작성</button></a>
+                    <a href="board/board_write.html"><button class="board_write">글작성</button></a>
                   </caption> 
                <thead>
                  <tr>
@@ -197,31 +196,30 @@
            
                <tbody>
                <?php
-                //반복문을 이용하여 result 변수에 담긴 값을 row변수에 계속 담아서 row변수의 값을 테이블에 출력한다.
-                while($row = mysqli_fetch_array($result)){ 
+                while($board = mysqli_fetch_array($result)){ 
             ?>
                 <tr>
                     
                     <td>
                         <?php
-                            echo "<a href='/board_detail.php?idx=".$row["idx"]."'>";
-                            echo $row["title"];
+                            echo "<a href='./board/board_view.php?idx=".$board["idx"]."'>";
+                            echo $board["title"];
                             echo "</a>";
                         ?>
                     </td>
                     <td>
                         <?php
-                            echo $row["date"];
+                            echo $board["date"];
                         ?>
                     </td>
                     <td>
                         <?php
-                            echo $row["name"];
+                            echo $board["name"];
                         ?>
                     </td>
                     <td>
                     <?php
-                            echo $row["hit"];
+                            echo $board["hit"];
                         ?>
                         </td>
                 </tr>
