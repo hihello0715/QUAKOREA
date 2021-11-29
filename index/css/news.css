@@ -70,6 +70,33 @@ div.sub_title:after {
     /* IE6-9 */
 }
 
+/* div.line{
+    height:500px; 
+    margin-top:90px; margin-bottom: 50px;
+    
+    border-bottom: black solid 1.5px;
+
+} */
+
+div.pic{
+background: url(../img/오제훈사진.png) center;
+width: 300px;
+height:200px;
+}
+div.pic.two{
+    background: white;
+}
+
+
+
+p.back{
+    background-color: #e9ecef;
+    
+
+}
+
+
+
 
 
   
@@ -89,8 +116,8 @@ div.sub_title:after {
 
 
 .news_div{
-    width:1000px;
-    height:500px;
+    width:auto;
+    height:auto;
     border-bottom: 1px solid black;
     margin-top:50px;
 }
@@ -106,7 +133,6 @@ div.sub_title:after {
     line-height: 10px;
     width:60%;
     height:500px;
-    
     float:right;
 
 }
