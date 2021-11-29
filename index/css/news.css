@@ -79,23 +79,18 @@ div.sub_title:after {
 } */
 
 div.pic{
+    
 background: url(../img/오제훈사진.png) center;
 width: 300px;
 height:200px;
 }
-div.pic.two{
-    background: white;
+
+.box{
+    display: flex;
+    margin: 70px 0;
+    border:1px solid gray;
 }
-
-
-
-p.back{
-    background-color: #e9ecef;
-    
-
-}
-
-
+.box .text{margin-left: 20px;}
 
 
 
