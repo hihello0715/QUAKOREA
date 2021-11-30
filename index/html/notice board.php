@@ -230,8 +230,8 @@
                </tbody>
 
              </table>
-              
-             <div Class="search_box" id="search_box">
+            
+             <div class="search_box" >
     <form action="/page/board/search_result.php" method="get">
       <select name="catgo">
         <option value="title">제목</option>

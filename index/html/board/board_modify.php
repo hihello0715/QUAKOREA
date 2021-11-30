@@ -5,12 +5,11 @@
                 $query = "select idx, title, content, date, hit, name from board where idx =$idx";
                 $result = $connect->query($query);
                 $rows = mysqli_fetch_assoc($result);
-                $hit = "update board set hit=hit+1 where idx=$idx";
-                $connect->query($hit);
 	?>
-<!Doctype html>
+<!doctype html>
 <head>
 <meta charset="UTF-8">
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -21,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../css/nav.css">
-    <link rel="stylesheet" type="text/css" href="../../css/board_view.css?ver=1">
+    <link rel="stylesheet" type="text/css" href="../../css/board.css?ver=1">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/nonem.css">
 </head>
@@ -170,32 +169,36 @@
         <div class="inner">
             <div class="sec">
       
-      
-         <div class = "view_area">
-          <div class="view_title"><?php echo $rows['title']?></div>
-              <div class = "view_row">
-                <div class = "writer_wrapper">
-                    <div class="writer">작성자</div>
-                    <div class="writer_DB"><?php echo $rows['name']?></div> 
-                </div>
-              <div class="date_hit_wrapper">
-                 <div class="date">작성일</div>
-                 <div class="date_DB"><?php echo $rows['date']?></div>         
-                 <div class ="hit">조회수 :</div>
-                 <div><?php echo $rows['hit']?></div>
-              </div>
-         </div>
-         <div class="view_content">
-         <?php echo nl2br("$rows[content]"); ?>
-        </div>
-        <!-- MODIFY & DELETE -->
-        <div>
-                <button class="view_btn" onclick="location.href='../notice board.php'">목록</button>
-                <button class="view_btn" onclick="location.href='board_modify.php?idx=<?php echo $rows['idx']; ?>'">수정</button>
-                <button class="view_btn" onclick="location.href='board_delete.php?idx=<?php echo $rows['idx']; ?>'">삭제</button>
-        </div>
-        </div>
+            <div class="write_area">
+            <div class="board_write_title">수정하기</div>
+                <form action="board_modfiy_ok.php?idx=<?php echo $idx; ?>" method="post">
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">제목</div></div>
+                        <textarea name="title" class="board_write_title_textarea" rows="1" cols="55" minlength="2" maxlength="100" required><?php echo $rows['title']; ?></textarea>
+                    </div>
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">작성자</div></div>
+                        <textarea name="name" class="board_write_nametitle_textarea" rows="1" cols="55" minlength="2" maxlength="6" required><?php echo $rows['name']; ?></textarea>
+                    </div>
+                    <div class="board_write_content_textarea_wrapper">
+                        <textarea name="content" class="board_write_contenttitle_textarea" rows="1" cols="55"  required><?php echo $rows['content']; ?></textarea>
+                    </div>
+                  
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">비밀번호</div></div>
+                        <input type="password" name="pw" class="board_write_password_textarea" minlength="4" maxlength="20" required></textarea>
+                    </div>         
+                    <div class="writepage_write_wrapper">
 
+                   
+<button class="board_writepage_write" type="submit">수정완료</button>
+                    
+                  
+                      </div>
+                </form>
+            </div>
+               
+    </div>
                              
             </div>
         </div>
