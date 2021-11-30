@@ -70,71 +70,121 @@ div.sub_title:after {
     /* IE6-9 */
 }
 
-/* div.line{
-    height:500px; 
-    margin-top:90px; margin-bottom: 50px;
-    
-    border-bottom: black solid 1.5px;
 
-} */
 
+
+
+
+
+
+
+
+/*news_Main*/
 div.pic{
     
 background: url(../img/오제훈사진.png) center;
 width: 300px;
-height:200px;
+height:300px;
 }
 
 div.pic.two{
     background: url(../img/뽀뽀.png) center;
 }
 
+div.pic.three{
+    background: url(../img/로고.png) center;
+}
+
 .SemiInner{
     display: flex;
     margin: 70px 0;
     border:1px solid gray;
-}
-.SemiInner .text{margin-left: 20px;}
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.news_div{
-    width:auto;
-    height:auto;
-    border-bottom: 1px solid black;
-    margin-top:50px;
-}
-
-.picture{
     
-    width:40%; 
-    height:500px;
-    float: left;
-
 }
-.paper{
-    line-height: 10px;
-    width:60%;
-    height:500px;
-    float:right;
-
+.SemiInner .text{
+    margin-left: 120px;
+    
+    
+    
 }
+
+h1{
+    
+    margin-bottom: 10px;
+    text-align: center;
+}
+p{
+    width: 500px;
+    line-height: 80px;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+    text-align: center;
+}
+
+a{
+    text-decoration: none;color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* news_Detail */
+
+
+
+.ghb li {
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+.ghb:hover ul li:hover,
+li.on {
+    color: gray;
+    transition: color 0.2s;
+    
+}
+
+/* sec1 */
+.tab-content {
+    width: 90%;
+    background: #ededed;
+    position: fixed;
+    top: 90px;
+    right: -90%;
+    height: 82%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.tab-content:nth-child(2) {
+    background: #fff;
+}
+
+.tab-content:nth-child(3) {
+    background: #ededed;
+}
+
+
+.tab-content.on {
+    transition: all 1s;
+    right: 80px;}
+    
+
+
+
+
 
 
 /* footer */
