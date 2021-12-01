@@ -2,16 +2,18 @@
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap");
 
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'NanumSquareRound';
-    word-spacing: 3px;
-    line-height: 1.5;
-} */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "NanumSquareRound";
+  word-spacing: 3px;
+  line-height: 1.5;
+}
 
-/* *{ border: 0.1px solid #7a7a7a;} */
+/* * {
+  border: 0.1px solid #7a7a7a;
+} */
 ul {
   list-style: none;
 }
@@ -101,7 +103,7 @@ footer .click {
 /* 전체 옵션 */
 * {
   margin: 0 auto;
-  padding: 0;
+  /* padding: 0; */
   font-family: "NanumSquareRound";
 }
 a {
@@ -308,7 +310,6 @@ ul li {
 /*검색 상자*/
 .search_box {
   margin: 30px 0px 50px 0px !important;
-  padding-bottom: 50px;
 }
 
 /* 자유게시판 write*/
@@ -345,7 +346,7 @@ form .board_write_title_textarea {
   justify-content: left;
   margin: 0px;
   width: 500px;
-  height: 21px;
+  height: 36px;
   padding: 5px;
   font-size: 16px;
   resize: none;
@@ -354,7 +355,7 @@ form .board_write_name_textarea {
   justify-content: left;
   margin: 0px;
   width: 500px;
-  height: 21px;
+  height: 36px;
   padding: 5px;
   font-size: 16px;
   resize: none;
@@ -364,7 +365,7 @@ form .board_write_nametitle_textarea {
   justify-content: left;
   margin: 0px;
   width: 300px;
-  height: 21px;
+  height: 36px;
   padding: 5px;
   font-size: 16px;
   resize: none;
@@ -373,7 +374,7 @@ form .board_write_password_textarea {
   justify-content: left;
   margin: 0px;
   width: 300px;
-  height: 21px;
+  height: 36px;
   padding: 5px;
   font-size: 16px;
   resize: none;
@@ -447,4 +448,24 @@ form .board_write_content_textarea_wrapper {
 }
 .hit_wrapper {
   display: flex;
+}
+
+/*페이징 넘버*/
+#page_num {
+  font-size: 14px;
+  margin-left: 260px;
+  margin-top: 30px;
+}
+.board_paging {
+  display: flex;
+  margin-bottom: 50px;
+}
+.page_num ul li {
+  float: left;
+  margin-left: 10px;
+  text-align: center;
+  padding: 0px 10px;
+}
+.fo_re {
+  font-weight: bold;
 }
