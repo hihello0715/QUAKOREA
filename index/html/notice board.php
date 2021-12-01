@@ -1,25 +1,20 @@
 <?php
-            $currentPage = 1;
-            if (isset($_GET["currentPage"])) {
-                $currentPage = $_GET["currentPage"];
-            }
- 
-            //mysqli_connect()함수로 커넥션 객체 생성
-            $conn = mysqli_connect("localhost:3307", "root", "ms010530","board");
-            //페이징 작업을 위한 테이블 내 전체 행 갯수 조회 쿼리
-            $sqlCount = "SELECT count(*) FROM board";
-            $resultCount = mysqli_query($conn,$sqlCount);
-            if($rowCount = mysqli_fetch_array($resultCount)){
-                $totalRowNum = $rowCount["count(*)"];   //php는 지역 변수를 밖에서 사용 가능.
-            }
-                        
-            $rowPerPage = 10;   //페이지당 보여줄 게시물 행의 수
-            $begin = ($currentPage -1) * $rowPerPage;
-            //board 테이블을 조회해서 board_no, board_title, board_user, board_date 필드 값을 내림차순으로 정렬하여 모두 가져 오는 쿼리
-            //입력된 begin값과 rowPerPage 값에 따라 가져오는 행의 시작과 갯수가 달라지는 쿼리
-            $sql = "SELECT idx, name, title, pw, content, date, hit FROM board order by idx desc limit ".$begin.",".$rowPerPage."";
-            $result = mysqli_query($conn,$sql);
-        ?>
+
+	header('Content-Type: text/html; charset=utf-8'); // utf-8인코딩
+
+	// localhost = DB주소, web=DB계정아이디, 1234=DB계정비밀번호, post_board="DB이름"
+	$db = new mysqli("localhost:3307","root","ms010530","board"); 
+	$db->set_charset("utf8");
+
+	function mq($sql)
+	{
+		global $db;
+		return $db->query($sql);
+	}
+
+  
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -193,11 +188,21 @@
                    <th class="board_hit">조회수</th>
                  </tr>
                </thead>
+               
            
                <tbody>
                <?php
-                while($board = mysqli_fetch_array($result)){ 
-            ?>
+               $sql = mq("select * from board order by idx desc limit 0,10"); 
+               while($board = $sql->fetch_array())
+               {
+                 //title변수에 DB에서 가져온 title을 선택
+                 $title=$board["title"]; 
+                 if(strlen($title)>10)
+                 { 
+                   //title이 30을 넘어서면 ...표시
+                   $title=str_replace($board["title"],mb_substr($board["title"],0,10,"utf-8")."...",$board["title"]);
+                 }
+           ?>
                 <tr>
                     
                     <td>
