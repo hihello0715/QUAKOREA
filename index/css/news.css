@@ -118,14 +118,15 @@ p{
     line-height: 80px;
     overflow:hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: auto;
     -webkit-box-orient: vertical;
     
     text-align: center;
 }
 
 a{
-    text-decoration: none;color:black;
+    text-decoration: none;
+    color:black;
 }
 
 
@@ -144,43 +145,23 @@ a{
 
 
 
-.ghb li {
-    cursor: pointer;
-    text-decoration: none;
-    }
 
-.ghb:hover ul li:hover,
-li.on {
+
+
+/*show*/
+
+summary:hover{
     color: gray;
-    transition: color 0.2s;
-    
 }
 
-/* sec1 */
-.tab-content {
-    width: 90%;
-    background: #ededed;
-    position: fixed;
-    top: 90px;
-    right: -90%;
-    height: 82%;
-    z-index: -1;
-    transition: all 0.5s;
-}
+summary{
+    cursor:pointer;
+    list-style:none;
+    text-align: center;
 
-.tab-content:nth-child(2) {
-    background: #fff;
-}
-
-.tab-content:nth-child(3) {
-    background: #ededed;
 }
 
 
-.tab-content.on {
-    transition: all 1s;
-    right: 80px;}
-    
 
 
 
