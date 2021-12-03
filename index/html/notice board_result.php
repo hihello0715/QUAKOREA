@@ -178,7 +178,11 @@
              <table class="list-table">
              <caption>
                     <div class="caption_text">목록</div>
-                    <a href="board/board_write.html"><button class="board_write">글작성</button></a>
+                    <?php /* 검색 변수 */ 
+                    $catagory = $_GET['catgo'];
+                    $search_con = $_GET['search'];
+                    ?>
+                    <a href="board/board_write.html"><button class="board_write"><?php echo $catagory; ?>에서 '<?php echo $search_con; ?>'검색결과</button></a>
                   </caption> 
                <thead>
                  <tr>
@@ -188,7 +192,7 @@
                    <th class="board_hit">조회수</th>
                  </tr>
                </thead>
-               
+               /* 여기까지 하다가 맘 12-02*/
            
                <tbody>
                <?php
@@ -255,7 +259,7 @@
              </table>
             
              <div class="search_box" >
-    <form action="./notice board_result.php" method="get">
+    <form action="/page/board/search_result.php" method="get">
       <select name="catgo">
         <option value="title">제목</option>
         <option value="name">작성자</option>
