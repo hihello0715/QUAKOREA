@@ -64,7 +64,7 @@
           </ul>
           <ul>
             <li><a href="../html/notice board.php">게시판</a></li>
-            <li><a href="../html/Q&A_none.html">Q&A</a></li>
+            <li><a href="../html/Q&A.php">Q&A</a></li>
             <li><a href="../html/question_none.html">문의</a></li>
             <li><a href="../html/map.html">오시는 길</a></li>
           </ul>
@@ -132,7 +132,7 @@
         </li>
         <ul class="menu-submenu accordion-content">
           <li><a class="head" href="../html/notice board.php">게시판</a></li>
-          <li><a class="head" href="../html/Q&A_none.html">Q&A</a></li>
+          <li><a class="head" href="../html/Q&A.php">Q&A</a></li>
           <li><a class="head" href="../html/question_none.html">문의</a></li>
           <li><a class="head" href="../html/map.html">오시는 길</a></li>
         </ul>
@@ -223,24 +223,25 @@
               ?>
                 <tr>
                     
-                    <td>
+                    <td class = "board_list_title"><li class ="list_li"></li>
                         <?php
                             echo "<a href='./board/board_view.php?idx=".$board["idx"]."'>";
                             echo $board["title"];
                             echo "</a>";
                         ?>
+                     
                     </td>
-                    <td>
+                    <td class= "board_list">
                         <?php
                             echo $board["date"];
                         ?>
-                    </td>
-                    <td>
+                    </td >
+                    <td class= "board_list">
                         <?php
                             echo $board["name"];
                         ?>
                     </td>
-                    <td>
+                    <td class= "board_list">
                     <?php
                             echo $board["hit"];
                         ?>
@@ -255,13 +256,13 @@
              </table>
             
              <div class="search_box" >
-    <form action="./notice board_result.php" method="get">
-      <select name="catgo">
+    <form class = "search_form"action="./notice board_result.php" method="get">
+      <select name="catgo" class="search_select">
         <option value="title">제목</option>
         <option value="name">작성자</option>
         <option value="content">내용</option>
       </select>
-      <input type="text" name="search" size="40" required="required" /> <button>검색</button>
+      <input type="text" name="search" size="40" required="required" /> <button class ="search_button">검색</button>
     </form>
     </div>
     <div class="page_num"">

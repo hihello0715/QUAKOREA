@@ -102,8 +102,8 @@ footer .click {
 /* 게시판 테이블 CSS */
 /* 전체 옵션 */
 * {
-  margin: 0 auto;
-  /* padding: 0; */
+  /* margin: 0 auto; */
+  padding: 0;
   font-family: "NanumSquareRound";
 }
 a {
@@ -271,6 +271,7 @@ ul li {
   font-weight: bold;
   font-size: 17px;
 }
+
 .board_title {
   height: 40px;
   width: 40.625rem;
@@ -295,12 +296,24 @@ ul li {
   font-weight: bold;
   font-size: 17px;
 }
-.list-table tbody td {
+.board_list {
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
   height: 20px;
   font-size: 14px;
+}
+.board_list_title {
+  text-align: left;
+  padding: 10px 0px 10px 20px;
+  border-bottom: 1px solid #ccc;
+  height: 20px;
+  font-size: 14px;
+}
+.list_li {
+  font-size: 8px;
+  float: left;
+  padding-right: 10px;
 }
 #write_btn {
   position: absolute;
@@ -309,6 +322,7 @@ ul li {
 }
 /*검색 상자*/
 .search_box {
+  width: 45%;
   margin: 30px 0px 50px 0px !important;
 }
 
@@ -336,6 +350,16 @@ ul li {
   text-align: left;
 }
 /*제목 wrapper*/
+.search_form {
+  display: flex;
+  justify-content: space-between;
+}
+.search_select {
+  padding: 5px 10px;
+}
+.search_button {
+  padding: 0px 10px;
+}
 form .board_write_title_textarea_wrapper {
   display: flex;
   border-bottom: 1px solid #ccc;
