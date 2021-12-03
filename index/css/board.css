@@ -309,6 +309,7 @@ ul li {
 }
 /*검색 상자*/
 .search_box {
+  width: 45%;
   margin: 30px 0px 50px 0px !important;
 }
 
@@ -336,6 +337,16 @@ ul li {
   text-align: left;
 }
 /*제목 wrapper*/
+.search_form {
+  display: flex;
+  justify-content: space-between;
+}
+.search_select {
+  padding: 5px 10px;
+}
+.search_button {
+  padding: 0px 10px;
+}
 form .board_write_title_textarea_wrapper {
   display: flex;
   border-bottom: 1px solid #ccc;
