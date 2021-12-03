@@ -1,5 +1,5 @@
 <?php
-                $connect = mysqli_connect('localhost:3307', 'root', 'ms010530', 'board');
+                $connect = mysqli_connect("localhost:3307","root","ms010530","board");
                 $idx = $_GET['idx'];
                 session_start();
                 $query = "select idx, title, content, date, hit, name from board where idx =$idx";
@@ -58,7 +58,7 @@
           </ul>
           <ul>
             <li><a href="../../html/notice board.php">게시판</a></li>
-            <li><a href="../../html/Q&A_none.html">Q&A</a></li>
+            <li><a href="../../html/Q&A.php">Q&A</a></li>
             <li><a href="../../html/question_none.html">문의</a></li>
             <li><a href="../../html/map.html">오시는 길</a></li>
           </ul>
@@ -126,7 +126,7 @@
         </li>
         <ul class="menu-submenu accordion-content">
           <li><a class="head" href="../../html/notice board.php">게시판</a></li>
-          <li><a class="head" href="../../html/Q&A_none.html">Q&A</a></li>
+          <li><a class="head" href="../../html/Q&A.php">Q&A</a></li>
           <li><a class="head" href="../../html/question_none.html">문의</a></li>
           <li><a class="head" href="../../html/map.html">오시는 길</a></li>
         </ul>
