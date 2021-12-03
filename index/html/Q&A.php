@@ -222,19 +222,19 @@
               ?>
                 <tr>
                     
-                    <td>
+                    <td class = "board_list_title"><li class = "list_li"></li>
                         <?php
                             echo "<a href='./qna/qna_view.php?idx=".$board["idx"]."'>";
                             echo $board["title"];
                             echo "</a>";
                         ?>
                     </td>
-                    <td>
+                    <td class = "board_list">
                         <?php
                             echo $board["date"];
                         ?>
                     </td>
-                    <td>
+                    <td class= "board_list">
                         <?php
                             echo $board["name"];
                         ?>
