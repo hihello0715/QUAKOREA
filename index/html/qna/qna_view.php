@@ -2,7 +2,7 @@
                 $connect = mysqli_connect('localhost:3307', 'root', 'ms010530', 'board');
                 $idx = $_GET['idx'];
                 session_start();
-                $query = "select idx, title, content, date, hit, name from board where idx =$idx";
+                $query = "select idx, title, content, date, name from qna where idx =$idx";
                 $result = $connect->query($query);
                 $rows = mysqli_fetch_assoc($result);
                 $hit = "update board set hit=hit+1 where idx=$idx";
@@ -164,8 +164,8 @@
 <body>
     <sectionc class="sec1">
         <div class="sub_title">
-            <h1 >게시판</h1>
-            <p>Notice board</p>
+            <h1 >Q&A</h1>
+            <p>Q&A</p>
         </div>
         <div class="inner">
             <div class="sec">
@@ -181,8 +181,6 @@
               <div class="date_hit_wrapper">
                  <div class="date">작성일</div>
                  <div class="date_DB"><?php echo $rows['date']?></div>         
-                 <div class ="hit">조회수 :</div>
-                 <div><?php echo $rows['hit']?></div>
               </div>
          </div>
          <div class="view_content">
@@ -190,7 +188,7 @@
         </div>
         <!-- MODIFY & DELETE -->
         <div>
-                <button class="view_btn" onclick="location.href='../notice board.php'">목록</button>
+                <button class="view_btn" onclick="location.href='../Q&A.php'">목록</button>
                 <button class="view_btn" onclick="location.href='board_modify.php?idx=<?php echo $rows['idx']; ?>'">수정</button>
                 <button class="view_btn" onclick="location.href='board_delete.php?idx=<?php echo $rows['idx']; ?>'">삭제</button>
         </div>
