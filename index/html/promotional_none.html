@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/none.css">
+    <link rel="stylesheet" type="text/css" href="../css/promotional.css">
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/nonem.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
 </head>
 
 <header>
@@ -156,16 +158,55 @@
             <p>Promotional material</p>
         </div>
         <div class="inner">
-            <div class="sec">
-                <div class="text">
-                    <i class="fas fa-times"></i>
-                    <h3>서비스 이용에 불편을 드려 대단히 죄송합니다.</h3>
-                    <p>현재 페이지 준비 중입니다</p>
-                    <p>금방 좋은 모습으로 찾아뵙겠습니다.</p>
+        <div class="SemiInner">
+        <div class="picInner">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../img/KR_QUA.png">
+                <div class="textInner">
+                  <h1>QUAKOREA의 팜플렛</h1>
                 </div>
-        
-                <a href="http://www.quakorea.com/">홈으로 이동<i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="textInner">
+                 
+                </div>
+              </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            
+          </div>
+      
+          
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+          
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              keyboard: {
+                enabled: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+        </div>
+      </div>
+      
+        </div>
+
         </div>
     </sectionc>
     
