@@ -1,5 +1,5 @@
 <?php
-                $connect = mysqli_connect("localhost:3307", "root", "ms010530","board") or die("fail");
+                $connect = mysqli_connect("localhost:3307","root","ms010530","board") or die("fail");
                 
                 $name = $_POST[name];                      //Writer
                 $pw = $_POST[pw];                        //Password

@@ -66,7 +66,7 @@ body {
 
 /* footer */
 footer {
-  bottom: 0;
+  /* bottom: 0; */
   position: relative;
   background: #333;
   color: #fff;
@@ -138,7 +138,7 @@ ul li {
   cursor: pointer;
   font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 15px;
   list-style: none;
@@ -251,7 +251,7 @@ ul li {
 /* 목록 */
 .caption_text {
   display: inline;
-  font-size: 28px;
+  font-size: 1.75rem;
   float: center;
 }
 #board_area {
@@ -278,7 +278,7 @@ ul li {
   border-top: 2px solid #343a40;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .board_date {
   height: 40px;
@@ -286,7 +286,7 @@ ul li {
   border-top: 2px solid #343a40;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .board_hit {
   height: 40px;
@@ -294,21 +294,21 @@ ul li {
   border-top: 2px solid #343a40;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .board_list {
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
   height: 20px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .board_list_title {
   text-align: left;
   padding: 10px 0px 10px 20px;
   border-bottom: 1px solid #ccc;
   height: 20px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .list_li {
   font-size: 8px;
