@@ -250,13 +250,13 @@
              </table>
             
              <div class="search_box" >
-    <form action="./notice board_result.php" method="get">
-      <select name="catgo">
+    <form class = "search_form"action="./notice board_result.php" method="get">
+      <select name="catgo" class="search_select">
         <option value="title">제목</option>
         <option value="name">작성자</option>
         <option value="content">내용</option>
       </select>
-      <input type="text" name="search" size="40" required="required" /> <button>검색</button>
+      <input type="text" name="search" size="40" required="required" /> <button class ="search_button">검색</button>
     </form>
     </div>
     <div class="page_num"">
