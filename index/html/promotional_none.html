@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/nonem.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
 </head>
 
 <header>
@@ -158,41 +160,53 @@
         <div class="inner">
         <div class="SemiInner">
         <div class="picInner">
-         
-
-        </div>
-        <div class="textInner">
-           
-        </div>
-        <div class="arrowInner">
-          
-        </div>
-        </div>
-
-
-
-
-          <!-- <div id="cincopa_45662f">...</div><script type="text/javascript">
-            var cpo = []; cpo["_object"] ="cincopa_45662f"; cpo["_fid"] = "A8IAI2OXFv0p";
-            var _cpmp = _cpmp || []; _cpmp.push(cpo);
-            (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-            cp.async = true; cp.src = "https://rtcdn.cincopa.com/libasync.js";
-            var c = document.getElementsByTagName("script")[0];
-            c.parentNode.insertBefore(cp, c); })(); </script> -->
-
-
-
-
-            <!-- <div class="sec">
-                <div class="text">
-                    <i class="fas fa-times"></i>
-                    <h3>서비스 이용에 불편을 드려 대단히 죄송합니다.</h3>
-                    <p>현재 페이지 준비 중입니다</p>
-                    <p>금방 좋은 모습으로 찾아뵙겠습니다.</p>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../img/KR_QUA.png">
+                <div class="textInner">
+                  <h1>QUAKOREA의 팜플렛</h1>
                 </div>
-        
-                <a href="http://www.quakorea.com/">홈으로 이동<i class="fas fa-long-arrow-alt-right"></i></a>
-            </div> -->
+              </div>
+              <div class="swiper-slide">
+                <div class="textInner">
+                 
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            
+          </div>
+      
+          
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+          
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              keyboard: {
+                enabled: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+        </div>
+      </div>
+      
+        </div>
+
         </div>
     </sectionc>
     
