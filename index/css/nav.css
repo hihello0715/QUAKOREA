@@ -92,6 +92,7 @@ nav .logo {
   background-size: 100%;
 }
 nav .right {
+  margin: 0;
   width: 18%;
   display: flex;
   align-items: center;
