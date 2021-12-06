@@ -1,5 +1,5 @@
 <?php
-                $connect = mysqli_connect("localhost:3306","quakorea19","Qua!1390019","quakorea19");
+                $connect = mysqli_connect("localhost:3307","quakorea19","Qua!1390019","quakorea19");
                 $idx = $_GET['idx'];
                 session_start();
                 $query = "select idx, title, content, date, hit, name from board where idx =$idx";

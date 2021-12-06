@@ -15,7 +15,7 @@
             }
  
             //mysqli_connect()함수로 커넥션 객체 생성
-            $conn = mysqli_connect("localhost:3306","quakorea19","Qua!1390019","quakorea19");
+            $conn = mysqli_connect("localhost:3307","quakorea19","Qua!1390019","quakorea19");
             //커넥션 객체 생성 확인
             if($conn) {
                 echo "연결 성공<br>";
