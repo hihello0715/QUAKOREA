@@ -177,8 +177,8 @@
               
              <table class="list-table">
              <caption>
-                    <div class="caption_text">목록</div>
-                    <a href="board/board_write.html"><button class="board_write">질문하기</button></a>
+                    <div class="caption_text"></div>
+                    <a href="qna/qna_write.html"><button class="board_write">질문하기</button></a>
                   </caption> 
                <thead>
                  <tr>

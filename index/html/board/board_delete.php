@@ -177,7 +177,7 @@
                         <input type="password" name="pw" class="board_write_password_textarea" minlength="4" maxlength="20" required></textarea>
                     </div>         
                     <div class="board_deletepage_btn_wrapper">
-                        <div class="board_writepage_write" onclick="location.href='./board_view.php?idx=<?php echo $idx;?>'">취소</div><button class="board_writepage_write" type="submit">삭제</button>
+                        <div class="board_writepage_write" onclick="location.href='./qna_view.php?idx=<?php echo $idx;?>'">취소</div><button class="board_writepage_write" type="submit">삭제</button>
                     </div>
                 </form>
             </div>

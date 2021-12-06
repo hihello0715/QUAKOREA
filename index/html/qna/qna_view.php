@@ -1,11 +1,11 @@
 <?php
-                $connect = mysqli_connect('localhost:3307', 'root', 'ms010530', 'board');
+                $connect = mysqli_connect("localhost:3306","quakorea19","Qua!1390019","quakorea19");
                 $idx = $_GET['idx'];
                 session_start();
                 $query = "select idx, title, content, date, name from qna where idx =$idx";
                 $result = $connect->query($query);
                 $rows = mysqli_fetch_assoc($result);
-                $hit = "update board set hit=hit+1 where idx=$idx";
+                $hit = "update qna set hit=hit+1 where idx=$idx";
                 $connect->query($hit);
 	?>
 <!Doctype html>
@@ -189,8 +189,8 @@
         <!-- MODIFY & DELETE -->
         <div>
                 <button class="view_btn" onclick="location.href='../Q&A.php'">목록</button>
-                <button class="view_btn" onclick="location.href='board_modify.php?idx=<?php echo $rows['idx']; ?>'">수정</button>
-                <button class="view_btn" onclick="location.href='board_delete.php?idx=<?php echo $rows['idx']; ?>'">삭제</button>
+                <button class="view_btn" onclick="location.href='qna_modify.php?idx=<?php echo $rows['idx']; ?>'">수정</button>
+                <button class="view_btn" onclick="location.href='qna_delete.php?idx=<?php echo $rows['idx']; ?>'">삭제</button>
         </div>
         </div>
 
