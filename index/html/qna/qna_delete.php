@@ -2,15 +2,14 @@
                 $connect = mysqli_connect("localhost:3307","quakorea19","Qua!1390019","quakorea19");
                 $idx = $_GET['idx'];
                 session_start();
-                $query = "select idx, title, content, date, name from qna where idx =$idx";
+                $query = "select idx, title, content, date, hit, name from qna where idx =$idx";
                 $result = $connect->query($query);
                 $rows = mysqli_fetch_assoc($result);
-                $hit = "update qna set hit=hit+1 where idx=$idx";
-                $connect->query($hit);
 	?>
-<!Doctype html>
+<!doctype html>
 <head>
 <meta charset="UTF-8">
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -21,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../css/nav.css">
-    <link rel="stylesheet" type="text/css" href="../../css/board_view.css?ver=1">
+    <link rel="stylesheet" type="text/css" href="../../css/board_delete.css?ver=1">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/nonem.css">
 </head>
@@ -170,31 +169,20 @@
         <div class="inner">
             <div class="sec">
       
-      
-         <div class = "view_area">
-          <div class="view_title"><?php echo $rows['title']?></div>
-              <div class = "view_row">
-                <div class = "writer_wrapper">
-                    <div class="writer">작성자</div>
-                    <div class="writer_DB"><?php echo $rows['name']?></div> 
-                </div>
-              <div class="date_hit_wrapper">
-                 <div class="date">작성일</div>
-                 <div class="date_DB"><?php echo $rows['date']?></div>         
-              </div>
-         </div>
-         <div class="view_content">
-         <?php echo nl2br("$rows[content]"); ?>
-        </div>
-        <!-- MODIFY & DELETE -->
-        <div>
-                <button class="view_btn" onclick="location.href='../Q&A.php'">목록</button>
-                <button class="view_btn" onclick="location.href='qna_modify.php?idx=<?php echo $rows['idx']; ?>'">수정</button>
-                <button class="view_btn" onclick="location.href='qna_delete.php?idx=<?php echo $rows['idx']; ?>'">삭제</button>
-        </div>
-        </div>
-
-                             
+            <div class="write_area">
+            <div class="board_write_title">비밀번호를 입력하시오.</div>
+                <form action="qna_delete_ok.php?idx=<?php echo $idx;?>" method="post">
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">비밀번호 :</div></div>
+                        <input type="password" name="pw" class="board_write_password_textarea" minlength="4" maxlength="20" required></textarea>
+                    </div>         
+                    <div class="board_deletepage_btn_wrapper">
+                        <div class="board_writepage_write" onclick="location.href='./board_view.php?idx=<?php echo $idx;?>'">취소</div><button class="board_writepage_write" type="submit">삭제</button>
+                    </div>
+                </form>
+            </div>
+               
+            </div>            
             </div>
         </div>
     </sectionc>
