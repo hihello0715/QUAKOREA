@@ -15,7 +15,7 @@
             }
  
             //mysqli_connect()함수로 커넥션 객체 생성
-            $conn = mysqli_connect("localhost:3307", "root", "ms010530","board");
+            $conn = mysqli_connect("localhost:3307","root","ms010530","board");
             //커넥션 객체 생성 확인
             if($conn) {
                 echo "연결 성공<br>";
