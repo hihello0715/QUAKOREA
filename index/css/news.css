@@ -76,17 +76,9 @@ div.sub_title:after {
     width: 40%;
     float: left;
     box-sizing: border-box;
-    
+   
     overflow: hidden;
     
-    
-    
-
-
-    
-    
-    
-   
 }
 
 
@@ -110,19 +102,38 @@ div.sub_title:after {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .img{
     background: url(../img/academy.jpg) center;
     width: 40%;
     height: 500px;
+    background-size: 100% 100%;
     
-    background-size: auto 100%;
+    
 }
+
+
+img{
+    width:100%    
+}
+
+
+
+
+
+
+
+
 .leg{width: 55%;}
 .SemiInner:last-child{border: none;}
 .newstitle{margin: 30px 0px 15px;}
+
+a{
+    text-decoration: none;
+   
+}
 
 
 
