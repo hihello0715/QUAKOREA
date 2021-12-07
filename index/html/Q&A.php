@@ -26,7 +26,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
-    <link rel="stylesheet" type="text/css" href="../css/board.css?ver=1">
+    <link rel="stylesheet" type="text/css" href="../css/board&qna.css?ver=1">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/nonem.css">
 </head>
@@ -65,7 +65,7 @@
           <ul>
             <li><a href="../html/notice board.php">게시판</a></li>
             <li><a href="../html/Q&A.php">Q&A</a></li>
-            <li><a href="../html/question_none.html">문의</a></li>
+            <li><a href="../html/question.html">문의</a></li>
             <li><a href="../html/map.html">오시는 길</a></li>
           </ul>
           <ul>
@@ -133,7 +133,7 @@
         <ul class="menu-submenu accordion-content">
           <li><a class="head" href="../html/notice board.php">게시판</a></li>
           <li><a class="head" href="../html/Q&A.php">Q&A</a></li>
-          <li><a class="head" href="../html/question_none.html">문의</a></li>
+          <li><a class="head" href="../html/question.html">문의</a></li>
           <li><a class="head" href="../html/map.html">오시는 길</a></li>
         </ul>
         <li id="nav5" class="toggle accordion-toggle">
@@ -182,7 +182,7 @@
                   </caption> 
                <thead>
                  <tr>
-                   <th class="board_title">제목</th>
+                   <th class="qna_title">제목</th>
                    <th class="board_date">작성일</th>
                    <th class="board_date">작성자</th>
                  </tr>
