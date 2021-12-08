@@ -2,7 +2,7 @@
                 $connect = mysqli_connect("localhost:3306","quakorea19","Qua!1390019","quakorea19");
                 $idx = $_GET['idx'];
                 session_start();
-                $query = "select idx, title, content, date, hit, name from board where idx =$idx";
+                $query = "select idx, title, content, date, hit, name from qna where idx =$idx";
                 $result = $connect->query($query);
                 $rows = mysqli_fetch_assoc($result);
 	?>

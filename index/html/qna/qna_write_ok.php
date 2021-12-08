@@ -10,8 +10,8 @@
                 $URL = '../Q&A.php';                   //return URL
  
  
-                $query = "insert into qna (idx, name, pw, title, content, date) 
-                        values(null,'$name', '$pw', '$title', '$content', '$date')";
+                $query = "insert into qna (idx, name, pw, title, content, date, hit) 
+                        values(null,'$name', '$pw', '$title', '$content', '$date', 0)";
  
  
                 $result = $connect->query($query);
