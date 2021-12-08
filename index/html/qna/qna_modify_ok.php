@@ -23,10 +23,10 @@ if ($row['pw']== $userpw){
     $sql = mq("update qna set name='".$username."',pw='".$userpw."',title='".$title."',content='".$content."' where idx='".$bno."'"); ?>
     
     <script type="text/javascript">alert("수정되었습니다."); </script>
-    <meta http-equiv="refresh" content="0 url=./board_view.php?idx=<?php echo $bno; ?>">
+    <meta http-equiv="refresh" content="0 url=./qna_view.php?idx=<?php echo $bno; ?>">
     <?php }
 else{ ?>
         <script type="text/javascript">alert("비밀번호가 틀렸습니다!"); </script>
-        <meta http-equiv="refresh" content="0 url=./board_view.php?idx=<?php echo $bno; ?>">
+        <meta http-equiv="refresh" content="0 url=./qna_view.php?idx=<?php echo $bno; ?>">
     <?php }
 ?>

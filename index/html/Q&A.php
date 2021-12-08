@@ -182,9 +182,10 @@
                   </caption> 
                <thead>
                  <tr>
-                   <th class="qna_title">제목</th>
+                   <th class="board_title">제목</th>
                    <th class="board_date">작성일</th>
                    <th class="board_date">작성자</th>
+                   <th class="board_hit">조회수</th>
                  </tr>
                </thead>
                
@@ -237,6 +238,11 @@
                     <td class= "board_list">
                         <?php
                             echo $board["name"];
+                        ?>
+                    </td>
+                    <td class= "board_list">
+                        <?php
+                            echo $board["hit"];
                         ?>
                     </td>
                   
