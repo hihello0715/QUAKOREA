@@ -13,78 +13,7 @@
   <link rel="stylesheet" media="all and (max-width: 640px)" href="index/css/mapm.css">
 </head>
 
-<header>
-  <nav>
-    <a href="http://www.quakorea.com/index/en/index_en.html" class="logo"></a>
-    <ul class="gnb1 inner">
-      <li class="title"><a href="../en/aboutus_en.html">Company</a></li>
-      <li class="title"><a href="../en/review_en.html">Product story</a></li>
-      <li class="title"><a href="../en/product_QUACOK_en.html">Product</a></li>
-      <li class="title"><a href="../en/notice board_none_en.html">Support</a></li>
-      <li class="title"><a href="../en/News_none_en.html">Promotion</a></li>
-      <li class="snb">
-        <div class="box">
-          <ul>
-            <li><a href="../en/aboutus_en.html">Introduction</a></li>
-            <li><a href="../en/Greeting_en.html">Greeting</a></li>
-            <li><a href="../en/history_en.html">History</a></li>
-            <li><a href="../en/patent_en.html">Patent</a></li>
-            <li><a href="../en/ci_en.html">CI</a></li>
-          </ul>
-          <ul>
-            <li><a href="../en/review_en.html">Product Review</a></li>
-          </ul>
-          <ul class="product">
-            <li><a href="../en/product_QUACOK_en.html">Entire product</a></li>
-            <ul>
-              <li><a href="../en/product_QUACOK_en.html">QUACOK</a></li>
-              <li><a href="../en/product_QUABAND_en.html">QUABAND</a></li>
-              <li><a href="../en/product_SPONGE_en.html">Sponge filter</a></li>
-              <li><a href="../en/product_QUABOX_en.html">QUABOX</a></li>
-              <li><a href="../en/product_LED_en.html">QUALED</a></li>
-            </ul>
-          </ul>
-          <ul>
-            <li><a href="../en/notice board_none_en.html">Bulletin board</a></li>
-            <li><a href="../en/Q&A_en.html">Q&A</a></li>
-            <li><a href="../en/question_none_en.html">Inquiry</a></li>
-            <li><a href="../en/map_en.html">Contact</a></li>
-          </ul>
-          <ul>
-            <li><a href="../en/News_none_en.html">News</a></li>
-            <li><a href="../en/promotional_none_en.html">Data</a></li>
-            <li><a href="../en/video_en.html">Video</a></li>
-            <li><a href="../en/brochure_en.html">Brochure</a></li>
-          </ul>
-
-          <div class="familysite">
-            <div class="box">
-              <p>Family Site</p>
-              <a href="#" class="quao2"> <img src="../img/quao2-color.png"> </a>
-              <a href="#" class="quatops"> <img src="../img/quatops-color.png"> </a>
-              <a href="#" class="quaexe"> <img src="../img/quaexe-color.png"> </a>
-              <a href="#" class="quainno"> <img src="../img/quainno-color.png"> </a>
-            </div>
-          </div>
-
-        </div>
-      </li>
-    </ul>
-
-    <div class="right">
-      <div class="link">
-        <a href="../html/News_none.html">KR</a>
-        <a href="#" class="on">EN</a>
-        <a href="../jp/News_none_jp.html">JP</a>
-      </div>
-
-      <a href="#" class="business">
-        <p>BUSINESS</p>
-        <i class="fas fa-plus"></i>
-      </a>
-    </div>
-  </nav>
-</header>
+<?php include("./bind_en/header_en.php")?>
 
 <body>
   <sectionc class="sec1">
