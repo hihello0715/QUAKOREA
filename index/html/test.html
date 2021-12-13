@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/none.css">
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/nonem.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
 </head>
 
 <header>
@@ -21,7 +23,7 @@
       <li class="title"><a href="../html/aboutus.html">회사소개</a></li>
       <li class="title"><a href="../html/review.html">제품 story</a></li>
       <li class="title"><a href="../html/product_QUACOK.html">제품</a></li>
-      <li class="title"><a href="../html/notice board_none.html">고객지원</a></li>
+      <li class="title"><a href="../html/notice board.php">고객지원</a></li>
       <li class="title"><a href="../html/News_none.html">홍보센터</a></li>
       <li class="snb">
         <div class="box">
@@ -46,9 +48,9 @@
             </ul>
           </ul>
           <ul>
-            <li><a href="../html/notice board_none.html">게시판</a></li>
-            <li><a href="../html/Q&A_none.html">Q&A</a></li>
-            <li><a href="../html/question_none.html">문의</a></li>
+            <li><a href="../html/notice board.php">게시판</a></li>
+            <li><a href="../html/Q&A.php">Q&A</a></li>
+            <li><a href="../html/question.html">문의</a></li>
             <li><a href="../html/map.html">오시는 길</a></li>
           </ul>
           <ul>
@@ -114,9 +116,9 @@
           <a class="menu-link" href="#">고객지원</a>
         </li>
         <ul class="menu-submenu accordion-content">
-          <li><a class="head" href="../html/notice board_none.html">게시판</a></li>
-          <li><a class="head" href="../html/Q&A_none.html">Q&A</a></li>
-          <li><a class="head" href="../html/question_none.html">문의</a></li>
+          <li><a class="head" href="../html/notice board.php">게시판</a></li>
+          <li><a class="head" href="../html/Q&A.php">Q&A</a></li>
+          <li><a class="head" href="../html/question.html">문의</a></li>
           <li><a class="head" href="../html/map.html">오시는 길</a></li>
         </ul>
         <li id="nav5" class="toggle accordion-toggle">
@@ -137,8 +139,8 @@
     <div class="right">
       <div class="link">
         <a href="#" class="on">KR</a>
-        <a href="../en/Q&A_none_en.html">EN</a>
-        <a href="../jp/Q&A_none_jp.html">JP</a>
+        <a href="../en/promotional_none_en.html">EN</a>
+        <a href="../jp/promotional_none_jp.html">JP</a>
       </div>
 
       <a href="#" class="business">
@@ -152,20 +154,58 @@
 <body>
     <sectionc class="sec1">
         <div class="sub_title">
-            <h1>Q&A</h1>
-            <p>Q&A</p>
+            <h1>홍보물</h1>
+            <p>Promotional material</p>
         </div>
         <div class="inner">
-            <div class="sec">
-                <div class="text">
-                    <i class="fas fa-times"></i>
-                    <h3>서비스 이용에 불편을 드려 대단히 죄송합니다.</h3>
-                    <p>현재 페이지 준비 중입니다</p>
-                    <p>금방 좋은 모습으로 찾아뵙겠습니다.</p>
-                </div>
+         <div id="slider-wrap">
+            <ul id="slider">
+                <li>
+                    <div>
+                        
+                    </div>
+                    <img src="../img/KR_QUA.png">
+                   
+                </li>
         
-                <a href="http://www.quakorea.com/">홈으로 이동<i class="fas fa-long-arrow-alt-right"></i></a>
+                <li>
+                    <div>
+                        
+                    </div>
+                    <img src="../img/EN_QUA.png">
+                </li>
+        
+                <li>
+                    <div>
+                        
+                    </div>
+                    <img src="../img/JP_QUA.png">
+                </li>
+        
+               
+        
+                
+            </ul>
+            
+            <div class="slider-btns" id="next"><span>▶</span></div>
+            <div class="slider-btns" id="previous"><span>◀</span></div>
+        
+            <div id="slider-pagination-wrap">
+                
             </div>
+            
+        </div>
+        <p style="font-size: 20px; font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px;">QUAKOREA의 팜플렛입니다</p>
+        <script src="../script/slideShow.js"></script>
+            
+   
+
+       
+      
+        </div>
+
         </div>
     </sectionc>
     

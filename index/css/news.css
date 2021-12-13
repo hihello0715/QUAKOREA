@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "NanumSquareRound";
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* body */
+
+div.sec1 {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+div.sub_title {
+  height: auto;
+  text-align: center;
+  background: #0a0f23;
+  color: #fff;
+  position: relative;
+  padding: 110px 0 60px;
+}
+
+div.sub_title:after {
+  position: absolute;
+  bottom: -5rem;
+  left: 0rem;
+  height: 5.1rem;
+  display: block;
+  width: 100%;
+  z-index: 300;
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+  /* IE6-9 */
+}
+
+.hand {
+  width: 40%;
+  float: left;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.leg {
+  width: 60%;
+  float: right;
+  box-sizing: border-box;
+}
+.newstitle {
+  font-size: 30px;
+  font-weight: bold;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.SemiInner {
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.img {
+  background: url(../img/academy.jpg) center;
+  width: 40%;
+  height: 500px;
+  background-size: 100% 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.leg {
+  width: 55%;
+}
+.SemiInner:last-child {
+  border: none;
+}
+.newstitle {
+  margin: 30px 0px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  position: relative;
+  bottom: 0;
+  background: #333;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  font-weight: 300;
+  font-size: 15px;
+  transition: all 0.3s;
+  text-align: center;
+  z-index: 50000;
+}
+
+footer .set {
+  display: flex;
+  justify-content: center;
+}
+
+footer .top {
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: #fff;
+  margin-right: 30px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+footer span {
+  margin-right: 15px;
+}
+
+footer .click {
+  cursor: pointer;
+}
+
+/* 뉴스 기사보기 버튼*/
+.news_view_btn {
+  float: right;
+  appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 15px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+.news_view_btn:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.news_view_btn:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+.news_view_btn:active {
+  background-color: #edeff2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.news_view_btn:focus {
+  outline: 1px transparent;
+}
+
+.news_view_btn:before {
+  display: none;
+}
+
+.news_view_btn:-webkit-details-marker {
+  display: none;
+}
+
+.news_view_btn_wrapper {
+  margin-top: 30px;
+}

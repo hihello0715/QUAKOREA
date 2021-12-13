@@ -1,3 +1,6 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -8,8 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/none.css">
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/board.css?ver=1">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/navm.css">
     <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/nonem.css">
 </head>
@@ -21,7 +24,7 @@
       <li class="title"><a href="../html/aboutus.html">회사소개</a></li>
       <li class="title"><a href="../html/review.html">제품 story</a></li>
       <li class="title"><a href="../html/product_QUACOK.html">제품</a></li>
-      <li class="title"><a href="../html/notice board_none.html">고객지원</a></li>
+      <li class="title"><a href="../html/notice board.php">고객지원</a></li>
       <li class="title"><a href="../html/News_none.html">홍보센터</a></li>
       <li class="snb">
         <div class="box">
@@ -46,9 +49,9 @@
             </ul>
           </ul>
           <ul>
-            <li><a href="../html/notice board_none.html">게시판</a></li>
-            <li><a href="../html/Q&A_none.html">Q&A</a></li>
-            <li><a href="../html/question_none.html">문의</a></li>
+            <li><a href="../html/notice board.php">게시판</a></li>
+            <li><a href="../html/Q&A.php">Q&A</a></li>
+            <li><a href="../html/question.html">문의</a></li>
             <li><a href="../html/map.html">오시는 길</a></li>
           </ul>
           <ul>
@@ -114,9 +117,9 @@
           <a class="menu-link" href="#">고객지원</a>
         </li>
         <ul class="menu-submenu accordion-content">
-          <li><a class="head" href="../html/notice board_none.html">게시판</a></li>
-          <li><a class="head" href="../html/Q&A_none.html">Q&A</a></li>
-          <li><a class="head" href="../html/question_none.html">문의</a></li>
+          <li><a class="head" href="../html/notice board.php">게시판</a></li>
+          <li><a class="head" href="../html/Q&A.php">Q&A</a></li>
+          <li><a class="head" href="../html/question.html">문의</a></li>
           <li><a class="head" href="../html/map.html">오시는 길</a></li>
         </ul>
         <li id="nav5" class="toggle accordion-toggle">
@@ -152,19 +155,43 @@
 <body>
     <sectionc class="sec1">
         <div class="sub_title">
-            <h1>게시판</h1>
-            <p>Notice board</p>
+            <h1 >문의</h1>
+            <p>question</p>
         </div>
         <div class="inner">
             <div class="sec">
-                <div class="text">
-                    <i class="fas fa-times"></i>
-                    <h3>서비스 이용에 불편을 드려 대단히 죄송합니다.</h3>
-                    <p>현재 페이지 준비 중입니다</p>
-                    <p>금방 좋은 모습으로 찾아뵙겠습니다.</p>
-                </div>
-        
-                <a href="http://www.quakorea.com/">홈으로 이동<i class="fas fa-long-arrow-alt-right"></i></a>
+      
+            <div class="write_area">
+            <div class="board_write_title">문의하기</div>
+                <form action="./question/question_ok.php" method="post">
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">제목</div></div>
+                        <textarea name="title" class="board_write_title_textarea" rows="1" cols="55" minlength="2" maxlength="100" required></textarea>
+                    </div>
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">작성자</div></div>
+                        <textarea name="name" class="board_write_nametitle_textarea" rows="1" cols="55" minlength="2" maxlength="4" required></textarea>
+                    </div>
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">이메일</div></div>
+                        <textarea name="email" class="board_write_nametitle_textarea" rows="1" cols="55" minlength="2" maxlength="20" required></textarea>
+                    </div>
+                    <div class="board_write_content_textarea_wrapper">
+                        <textarea name="content" class="board_write_contenttitle_textarea" rows="1" cols="55"  required></textarea>
+                    </div>
+                  
+                    <div class="board_write_title_textarea_wrapper">
+                      <div class="board_write_subtitle_wrapper"><div class="board_write_subtitle">비밀번호</div></div>
+                        <input type="password" name="pw" class="board_write_password_textarea" minlength="4" maxlength="20" required></textarea>
+                    </div>         
+                    <div class="writepage_write_wrapper">
+                        <button class="board_writepage_write" type="submit">문의하기</button>
+                    </div>
+                </form>
+            </div>
+               
+    </div>
+                             
             </div>
         </div>
     </sectionc>

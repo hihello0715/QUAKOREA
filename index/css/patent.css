@@ -1,135 +1,162 @@
 @charset "UTF-8";
-@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'NanumSquareRound';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "NanumSquareRound";
 }
 
-
 /* *{ border: 0.1px solid #7a7a7a;} */
-ul{list-style: none;}
-a {text-decoration: none;}
-
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    
-    word-spacing: 3px;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+
+  word-spacing: 3px;
+  line-height: 1.5;
 }
 
 /* body */
-.sec1 .sub_title{
-    text-align: center;
-    width: 100%;
-    padding: 110px 0 60px;
-    background: #0A0F23;
-    color: #fff;
+.sec1 .sub_title {
+  text-align: center;
+  width: 100%;
+  padding: 110px 0 60px;
+  background: #0a0f23;
+  color: #fff;
 }
-.sec1 h2{margin-bottom: 20px;}
-.sec1 .content1{
-    margin: 100px auto;
+.sec1 h2 {
+  margin-bottom: 20px;
 }
-.sec1 .content1 .box_set span{display: block;}
-.sec1 .content1 .box_set, .content2 .set_box, .swiper-wrapper{
-    display: flex;
-    justify-content: space-between;
+.sec1 .content1 {
+  margin: 100px auto;
 }
-.swiper-slide{width: auto;}
-.content1 .box{
-    box-shadow: 5px 8px 15px #aaa;
-    width: 20%;
-    height: 250px;
-    padding: 20px;
+.sec1 .content1 .box_set span {
+  display: block;
 }
-.content1 .box p:first-child{
-    color: #ccc;
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 15px;
+.sec1 .content1 .box_set,
+.content2 .set_box,
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
-.content2{
-    width: 100%;
-    height: auto;
-    padding: 50px 0 60px;
-    background: rgb(230, 230, 230);
+.swiper-slide {
+  width: auto;
 }
-.content2 .set{
-    text-align: center;
-    font-weight: 500;
+.content1 .box {
+  box-shadow: 5px 8px 15px #aaa;
+  width: 20%;
+  height: 250px;
+  padding: 20px;
 }
-.content2 .set i, .material-icons{
-    color: #000;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    background: #fff;
-    margin-bottom: 20px;
-    line-height: 60px;
-    font-size: 25px;
+.content1 .box p:first-child {
+  color: #ccc;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 15px;
 }
-.content3{margin: 100px auto;}
-.content3 ul{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+.content2 {
+  width: 100%;
+  height: auto;
+  padding: 50px 0 60px;
+  background: rgb(230, 230, 230);
 }
-.content3 h3{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 80px;
-    color: #555;
+.content2 .set {
+  text-align: center;
+  font-weight: 500;
 }
-.content3 p{
-    font-weight: 500;
-    font-size: 20px;
+.content2 .set i,
+.material-icons {
+  color: #000;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  margin-bottom: 20px;
+  line-height: 60px;
+  font-size: 25px;
+}
+.content3 {
+  margin: 100px auto;
+}
+.content3 ul {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.content3 h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 80px;
+  color: #555;
+}
+.content3 p {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .content4 {
-    margin: 100px auto;
-    word-spacing: normal;
-    line-height: normal;
+  margin: 100px auto;
+  word-spacing: normal;
+  line-height: normal;
 }
-.content4 .Patent_set.one{margin-bottom: 18px;}
-.content4 img{
-    width: 230px;
-    height: auto;
-    margin-left: 22px;
-    box-shadow: 0px 0px 5px #aaa;
+.content4 .Patent_set.one {
+  margin-bottom: 18px;
 }
-.content4 img:first-child{margin: 0;}
+.content4 .Patent_set {
+  display: flex;
+  justify-content: space-between;
+}
+.content4 img {
+  width: 230px;
+  height: auto;
+  box-shadow: 0px 0px 5px #aaa;
+}
+.content4 img:first-child {
+  margin: 0;
+}
 
-.swiper{display: none;}
+.swiper {
+  display: none;
+}
 
 /* footer */
-footer{
-    background: #333;
-    color: #fff;
-    width: 100%;
-    height: auto;
-    padding: 20px 0;
-    font-weight: 300;
-    font-size: 15px;
-    transition: all 0.3s;
-    text-align: center;
+footer {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  font-weight: 300;
+  font-size: 15px;
+  transition: all 0.3s;
+  text-align: center;
 }
-footer .set{
-    display: flex;
-    justify-content: center;
+footer .set {
+  display: flex;
+  justify-content: center;
 }
-footer .top{margin-bottom: 5px;}
-footer a{
-    color: #fff;
-    margin-right: 30px;
-    font-weight: 600;
-    transition: all 0.3s;
+footer .top {
+  margin-bottom: 5px;
 }
-footer span{margin-right: 15px;}
-footer .click{cursor: pointer;}
+footer a {
+  color: #fff;
+  margin-right: 30px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+footer span {
+  margin-right: 15px;
+}
+footer .click {
+  cursor: pointer;
+}
