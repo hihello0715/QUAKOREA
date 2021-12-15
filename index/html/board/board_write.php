@@ -1,11 +1,3 @@
-<?php
-                $connect = mysqli_connect("localhost:3307","quakorea19","Qua!1390019","quakorea19");
-                $idx = $_GET['idx'];
-                session_start();
-                $query = "select idx, title, content, date, hit, name from qna where idx =$idx";
-                $result = $connect->query($query);
-                $rows = mysqli_fetch_assoc($result);
-	?>
 <!doctype html>
 
 <head>
@@ -21,7 +13,7 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../../css/nav.css">
-        <link rel="stylesheet" type="text/css" href="../../css/board_delete.css?ver=1">
+        <link rel="stylesheet" type="text/css" href="../../css/board.css?ver=1">
         <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/navm.css">
         <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/nonem.css">
     </head>
@@ -31,31 +23,49 @@
 <body>
     <sectionc class="sec1">
         <div class="sub_title">
-            <h1>Q&A</h1>
-            <p>Q&A</p>
+            <h1>게시판</h1>
+            <p>Notice board</p>
         </div>
         <div class="inner">
             <div class="sec">
 
                 <div class="write_area">
-                    <div class="board_write_title">비밀번호를 입력하시오.</div>
-                    <form action="qna_delete_ok.php?idx=<?php echo $idx;?>" method="post">
+                    <div class="board_write_title">글작성</div>
+                    <form action="board_write_ok.php" method="post">
                         <div class="board_write_title_textarea_wrapper">
                             <div class="board_write_subtitle_wrapper">
-                                <div class="board_write_subtitle">비밀번호 :</div>
+                                <div class="board_write_subtitle">제목</div>
+                            </div>
+                            <textarea name="title" class="board_write_title_textarea" rows="1" cols="55" minlength="2"
+                                maxlength="100" required></textarea>
+                        </div>
+                        <div class="board_write_title_textarea_wrapper">
+                            <div class="board_write_subtitle_wrapper">
+                                <div class="board_write_subtitle">작성자</div>
+                            </div>
+                            <textarea name="name" class="board_write_nametitle_textarea" rows="1" cols="55"
+                                minlength="2" maxlength="4" required></textarea>
+                        </div>
+                        <div class="board_write_content_textarea_wrapper">
+                            <textarea name="content" class="board_write_contenttitle_textarea" rows="1" cols="55"
+                                required></textarea>
+                        </div>
+
+                        <div class="board_write_title_textarea_wrapper">
+                            <div class="board_write_subtitle_wrapper">
+                                <div class="board_write_subtitle">비밀번호</div>
                             </div>
                             <input type="password" name="pw" class="board_write_password_textarea" minlength="4"
                                 maxlength="20" required></textarea>
                         </div>
-                        <div class="board_deletepage_btn_wrapper">
-                            <div class="board_writepage_write"
-                                onclick="location.href='./board_view.php?idx=<?php echo $idx;?>'">취소</div><button
-                                class="board_writepage_write" type="submit">삭제</button>
+                        <div class="writepage_write_wrapper">
+                            <button class="board_writepage_write" type="submit">글작성</button>
                         </div>
                     </form>
                 </div>
 
             </div>
+
         </div>
         </div>
     </sectionc>

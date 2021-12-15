@@ -3,7 +3,7 @@
 	header('Content-Type: text/html; charset=utf-8'); // utf-8인코딩
 
 	// localhost = DB주소, web=DB계정아이디, 1234=DB계정비밀번호, post_board="DB이름"
-	$db = new mysqli("localhost:3306","quakorea19","Qua!1390019","quakorea19"); 
+	$db = new mysqli("localhost:3307","quakorea19","Qua!1390019","quakorea19"); 
 	$db->set_charset("utf8");
 
 	function mq($sql)
@@ -182,7 +182,7 @@
                     $catagory = $_GET['catgo'];
                     $search_con = $_GET['search'];
                     ?>
-                    <a href="board/board_write.html"><button class="board_write"><?php echo $catagory; ?>에서 '<?php echo $search_con; ?>'검색결과</button></a>
+                    <a href="board/board_write.php"><button class="board_write"><?php echo $catagory; ?>에서 '<?php echo $search_con; ?>'검색결과</button></a>
                   </caption> 
                <thead>
                  <tr>
