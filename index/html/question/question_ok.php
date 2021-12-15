@@ -8,7 +8,7 @@
                 $date = date('Y-m-d H:i:s'); 
                 $email = $_POST[email];            //Date
  
-                $URL = '../question.html';                   //return URL
+                $URL = '../question.php';                   //return URL
  
  
                 $query = "insert into question (idx, name, pw, title, content, date, email) 
