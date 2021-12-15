@@ -18,22 +18,22 @@
     <nav>
         <a href="http://www.quakorea.com/" class="logo"></a>
         <ul class="gnb1 inner">
-            <li class="title"><a href="../html/aboutus.html">회사소개</a></li>
-            <li class="title"><a href="../html/review.ptp">제품 story</a></li>
+            <li class="title"><a href="../html/aboutus.php">회사소개</a></li>
+            <li class="title"><a href="../html/review.php">제품 story</a></li>
             <li class="title"><a href="../html/product_QUACOK.php">제품</a></li>
             <li class="title"><a href="../html/notice board.php">고객지원</a></li>
             <li class="title"><a href="../html/News_none.php">홍보센터</a></li>
             <li class="snb">
                 <div class="box">
                     <ul>
-                        <li><a href="../html/aboutus.html">기업소개</a></li>
+                        <li><a href="../html/aboutus.php">기업소개</a></li>
                         <li><a href="../html/Greeting.php">인사</a></li>
                         <li><a href="../html/history.php">연혁</a></li>
                         <li><a href="../html/patent.php">특허</a></li>
                         <li><a href="../html/ci.php">CI</a></li>
                     </ul>
                     <ul>
-                        <li><a href="../html/review.ptp">제품리뷰</a></li>
+                        <li><a href="../html/review.php">제품리뷰</a></li>
                     </ul>
                     <ul class="product">
                         <li><a href="../html/product_QUACOK.php">전체제품</a></li>
@@ -84,7 +84,7 @@
                     <a class="menu-link" href="#">회사소개</a>
                 </li>
                 <ul class="menu-submenu accordion-content">
-                    <li><a class="head" href="../html/aboutus.html">기업소개</a></li>
+                    <li><a class="head" href="../html/aboutus.php">기업소개</a></li>
                     <li><a class="head" href="../html/Greeting.php">인사</a></li>
                     <li><a class="head" href="../html/history.php">연혁</a></li>
                     <li><a class="head" href="../html/patent.php">특허</a></li>
@@ -95,7 +95,7 @@
                     <a class="menu-link" href="#">제품 story</a>
                 </li>
                 <ul class="menu-submenu accordion-content">
-                    <li><a class="head" href="../html/review.ptp">제품리뷰</a></li>
+                    <li><a class="head" href="../html/review.php">제품리뷰</a></li>
                 </ul>
                 <li id="nav3" class="toggle accordion-toggle">
                     <span class="icon-plus"></span>

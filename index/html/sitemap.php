@@ -24,9 +24,9 @@
             <div class="content1">
                 <ul>
                     <li>
-                        <a href="../html/aboutus.html">회사소개</a>
+                        <a href="../html/aboutus.php">회사소개</a>
                         <ul>
-                            <li><a href="../html/aboutus.html">기업소개</a></li>
+                            <li><a href="../html/aboutus.php">기업소개</a></li>
                             <li><a href="../html/Greeting.php">인사</a></li>
                             <li><a href="../html/history.php">연혁</a></li>
                             <li><a href="../html/patent.php">특허</a></li>
@@ -36,7 +36,7 @@
                     <li>
                         <a href="#">제품 story</a>
                         <ul>
-                            <li><a href="../html/review.ptp">제품리뷰</a></li>
+                            <li><a href="../html/review.php">제품리뷰</a></li>
                         </ul>
                     </li>
                     <li>
