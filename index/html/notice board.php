@@ -154,8 +154,8 @@
     <div class="right">
       <div class="link">
         <a href="#" class="on">KR</a>
-        <a href="../en/notice board_none_en.html">EN</a>
-        <a href="../jp/notice board_none_jp.html">JP</a>
+        <a href="../en/notice board_none_en.php">EN</a>
+        <a href="../jp/notice board_none_jp.php">JP</a>
       </div>
 
       <a href="#" class="business">

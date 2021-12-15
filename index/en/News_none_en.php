@@ -13,7 +13,7 @@
   <link rel="stylesheet" media="all and (max-width: 640px)" href="index/css/mapm.css">
 </head>
 
-<?php include("./bind_en/header_en.php")?>
+<?php include("./bind_en/header_en.html")?>
 
 <body>
   <sectionc class="sec1">
@@ -103,7 +103,7 @@
           <p>We'll see you soon with a good look.</p>
         </div>
 
-        <a href="http://www.quakorea.com/index/en/index_en.html">home<i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="http://www.quakorea.com/index/en/index_en.php">home<i class="fas fa-long-arrow-alt-right"></i></a>
       </div> -->
     </div>
   </sectionc>
@@ -119,22 +119,7 @@
   </script>
 </body>
 
-<footer>
-  <div class="set">
-    <div class="text">
-      <div class="top">
-        <a href="#">Terms and conditions</a>
-        <a href="#">Personal information processing policy</a>
-        <a href="../en/sitemap_en.html">Site map</a>
-      </div>
-      <div class="bottom">
-        <span>Chungbuk National University G-Tech Venture Center 301-2 Garosu-ro 1251 (Bokdae-dong), Heungdeok-gu,
-          Cheongju-si, Chungcheongbuk-do.</span>
-        <span onclick="location.href='tel:0432335880'" class="click">TEL. 043-233-5880</span>
-        <span>E-mail. quakorea@naver.com</span>
-      </div>
-    </div>
-  </div>
-</footer>
+
+<?php include("./bind_en/footer_en.html")?>
 
 </html>
