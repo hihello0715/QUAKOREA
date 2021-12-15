@@ -11,90 +11,8 @@
     <link rel="stylesheet" media="all and (max-width: 640px)" href="index/css/historym.css">
 </head>
 
-<header>
-    <nav>
-      <a href="http://www.quakorea.com/" class="logo"></a>
-      <ul class="gnb inner">
-        <li class="title"><a href="../html/aboutus.html">회사소개</a></li>
-        <li class="title"><a href="#">제품 story</a></li>
-        <li class="title"><a href="#">제품</a></li>
-        <li class="title"><a href="#">고객지원</a></li>
-        <li class="title"><a href="#">홍보센터</a></li>
-        <li class="snb">
-          <div class="box">
-            <ul>
-              <li><a href="../html/aboutus.html">기업소개</a></li>
-              <li><a href="../html/Greeting.html">인사</a></li>
-              <li><a href="../html/history.html">연혁</a></li>
-              <li><a href="../html/patent.html">특허</a></li>
-              <li><a href="../html/ci.html">CI</a></li>
-            </ul>
-            <ul class="height">
-              <li><a href="#">해수</a></li>
-                <ul class="additional">
-                  <li><a href="#">수조시스템</a></li>
-                  <li><a href="#">여과시스템</a></li>
-                  <li><a href="#">편의용품</a></li>
-                </ul>
-              <li><a href="#">담수</a></li>
-                <ul class="additional">
-                  <li><a href="#">여과시스템</a></li>
-                  <li><a href="#">편의용품</a></li>
-                </ul>
-            </ul>
-            <ul class="height">
-              <li><a href="#">핵심제품</a></li>
-                <ul class="additional">
-                  <li><a href="#">수조시스템</a></li>
-                  <li><a href="#">여과시스템</a></li>
-                  <li><a href="#">편의용품</a></li>
-                </ul>
-              <li><a href="#">진행제품</a></li>
-                <ul class="additional">
-                  <li><a href="#">여과시스템</a></li>
-                  <li><a href="#">편의용품</a></li>
-                </ul>
-            </ul>
-            <ul>
-              <li><a href="#">게시판</a></li>
-              <li><a href="#">Q&A</a></li>
-              <li><a href="#">문의</a></li>
-              <li><a href="../html/map.html">오시는 길</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">소식</a></li>
-              <li><a href="#">홍보물</a></li>
-              <li><a href="#">영상</a></li>
-              <li><a href="#">브로슈어</a></li>
-            </ul>
-  
-            <div class="familysite">
-              <div class="box">
-                <p>Family Site</p>
-                <a href="#" class="quao2"> <img src="../img/quao2-color.png"> </a>
-                <a href="#" class="quatops"> <img src="../img/quatops-color.png"> </a>
-                <a href="#" class="quaexe"> <img src="../img/quaexe-color.png"> </a>
-                <a href="#" class="quainno"> <img src="../img/quainno-color.png"> </a>
-              </div>
-            </div>
-            
-          </div>
-        </li>
-      </ul>
-      <div class="right">
-        <div class="link">
-          <a href="#" class="on">KR</a>
-          <a href="#">EN</a>
-          <a href="#">JP</a>
-        </div>
-  
-        <a href="#" class="business">
-          <p>BUSINESS</p>
-          <i class="fas fa-plus"></i>
-        </a>  
-      </div> 
-    </nav>
-  </header>
+<?php include("./bind/header.html")?>
+
 
 <body>
     <sectionc class="sec1">
@@ -178,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content1"> 
+            <div class="content1">
                 <div class="belt no">
                     <h2>2020.</h2>
                     <div class="set">
@@ -234,42 +152,27 @@
                     </div>
                 </div>
             </div>
-                <div class="belt no">
-                    <h2>2009.</h2>
-                    <div class="set">
-                        <p>06.</p>
-                        <div class="text">
-                            <p>쿠아코리아 - 수족관용 수제품 아크릴공방 오픈(경기도 의정부)</p>
-                        </div>
+            <div class="belt no">
+                <h2>2009.</h2>
+                <div class="set">
+                    <p>06.</p>
+                    <div class="text">
+                        <p>쿠아코리아 - 수족관용 수제품 아크릴공방 오픈(경기도 의정부)</p>
                     </div>
                 </div>
+            </div>
         </div>
     </sectionc>
-    
-    
+
+
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../script/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../script/about.js"></script>
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 </body>
 
-<footer>
-    <div class="set">
-      <div class="text">
-        <div class="top">
-          <a href="#">이용약관</a>
-          <a href="#">개인정보처리방침</a>
-          <a href="../html/sitemap.html">사이트맵</a>
-        </div>
-        <div class="bottom">
-          <span>충청북도 청주시 흥덕구 가로수로 1251 (복대동) 충북대학교 G-테크 벤처센터 301-2호</span>
-          <span onclick="location.href='tel:0432335880'" class="click">TEL. 043-233-5880</span>
-          <span>FAX. 043-233-5881</span>
-        </div>
-      </div>
-    </div>
-</footer>
+<?php include("./bind/footer.html")?>
